@@ -4,12 +4,11 @@ import Header from "./components/Header";
 import AddedFeatures from "./components/AddedFeatures";
 import AdditionalFeatures from "./components/AdditionalFeatures";
 import Total from "./components/Total";
-import { reducer, initialState } from "./reducers";
+import { Reducer, initialState } from "./reducers";
 import { createStore } from "redux";
 
 const App = () => {
-  const store = createStore(reducer, initialState);
-
+  const store = createStore(Reducer, initialState);
 
   const state = {
     additionalPrice: 0,
